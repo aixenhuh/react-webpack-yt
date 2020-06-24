@@ -6,18 +6,18 @@ module.exports = {
     module : {
         rules : [
             {
-                test : /\.(js|jsx)$/,
-                exclude : /node_modules/,
-                use : {
-                    loader : "babel-loader"
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
                 }
             },
             {
-                test : /\.html$/,
-                use : [
+                test: /\.html$/,
+                use: [
                     {
-                        loader : "html-loader",
-                        options : { minimize : true }
+                        loader: "html-loader",
+                        options: { minimize: true }
                     }
                 ]
             },
@@ -35,10 +35,10 @@ module.exports = {
             }
         ]
     },
-    plugins : [
+    plugins: [
         new HtmlWebPackPlugin({
             template: "./public/index.html",
-            filename : "./index.html"
+            filename: "./index.html"
         }),
         new MiniCssExtractPlugin({
             filename : '[name].css',
