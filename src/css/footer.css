@@ -1,0 +1,569 @@
+.cont_brunch {
+    position: relative;
+    font-size: 12px;
+}
+
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.intro_brunch {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.intro_brunch .tit_brunch {
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Nanum Myeongjo",sans-serif;
+    color: #1a1a1a;
+    text-align: left;
+    letter-spacing: -.05em;
+}
+
+.tit_brunch {
+    margin: 150px auto 0;
+}
+
+.intro_brunch .desc_brunch {
+    padding-bottom: 16px;
+    margin-top: -3px;
+    font-size: 32px;
+    line-height: 46px;
+    font-family: "Nanum Myeongjo",sans-serif;
+    color: #cacaca;
+    letter-spacing: -.05em;
+}
+
+.intro_brunch .ico_logo {
+    width: 28px;
+    height: 28px;
+    margin: 1px 6px 0 5px;
+    background-position: -120px -200px;
+}
+
+.desc_brunch {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.intro_brunch .desc_brunch .txt_brunch {
+    display: inline;
+    color: #dedede;
+    background: 0 0;
+}
+
+.txt_brunch {
+    overflow: hidden;
+    display: block;
+    margin: 17px auto 0;
+    background: url(//t1.daumcdn.net/brunch9/static/images/pc/txt_brunch_v5_181004_v2.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+.editor_pic {
+    position: relative;
+    /* margin-top: 22px; */
+}
+
+.editor_pic .wrap_slide {
+    overflow: visible;
+    /* width: 960px; */
+    height: 520px;
+}
+
+.wrap_slide {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display : flex;
+}
+
+.wrap_slide .list_slide {
+    position: absolute;
+    top: 0;
+}
+
+.wrap_slide .list_slide li {
+    float: left;
+}
+
+.wrap_pic {
+    overflow: hidden;
+    width: 960px;
+}
+.PC_DISCOVER_BRUNCHBOOK .item_pic_type1 {
+    position: relative;
+    background-image: linear-gradient(-180deg,#f4f4f4 0,#dedede 82%);
+    background-image: -moz-linear-gradient(-180deg,#f4f4f4 0,#dedede 82%);
+}
+.PC_DISCOVER_BRUNCHBOOK .item_pic_type1 {
+    width: 50%;
+    height: 520px;
+}
+.wrap_pic .item_pic {
+    position: relative;
+    float: left;
+}
+
+.wrap_pic .item_pic .link_item {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.PC_DISCOVER_BRUNCHBOOK {
+    flex:1;
+    width:50%
+}
+
+.PC_DISCOVER_B2 {
+    flex:1;
+    width:50%
+}
+
+.PC_DISCOVER_BRUNCHBOOK .link_item .fade_cover1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(0,0,0,0);
+    -webkit-transition: -webkit-opacity .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .book_cover {
+    overflow: hidden;
+}
+
+.book_cover {
+    display: block;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    z-index: 5;
+    width: 230px;
+    height: 324px;
+    margin-left: -115px;
+    padding: 68px 0 0;
+    border-radius: 2px 6px 6px 2px;
+    background-color: #ddd;
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+
+.book_cover .cont_cover {
+    position: relative;
+    z-index: 1;
+    margin: 0 50px;
+    width: 130px;
+    height: 172px;
+    background-color: #fff;
+}
+
+.book_cover .tit_cover {
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 92px;
+    padding: 10px 13px 0 10px;
+    font-weight: 400;
+    font-family: "Nanum Myeongjo",sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+.book_cover .txt_writer {
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    width: 100%;
+    max-height: 35px;
+    padding: 0 10px;
+    font-family: "Nanum Myeongjo",sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    color: #666;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.book_cover .dimmed_book_type1 {
+    z-index: 10;
+}
+
+.dimmed_book_type1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 100%;
+}
+
+.dimmed_book_type1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 100%;
+}
+
+.book_cover .txt_publisher {
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    font-size: 11px;
+    line-height: 18px;
+    font-family: "SF Pro Bold","Malgun Gothic";
+    letter-spacing: .2px;
+    color: #fff;
+    text-align: center;
+}
+
+.book_cover .dimmed_cover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px 6px 6px 0;
+    background-color: rgba(0,0,0,.1);
+}
+
+.PC_DISCOVER_BRUNCHBOOK .info_release {
+    display: table;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 109px;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .inner-info {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .info_release .txt_g {
+    display: block;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .info_release .txt_g+.txt_g {
+    letter-spacing: -.1px;
+    color: #959595;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .info_release .txt_g {
+    display: block;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .inner-info {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .item_pic_type2 {
+    width: 50%;
+    height: 260px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.wrap_pic .img_pic {
+    width: 100%;
+    height: 100%;
+    transition: transform .3s ease-in-out;
+}
+
+.info_g {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrap_pic .tit_pic {
+    display: block;
+    padding-top: 12px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 36px;
+    font-family: 'Nanum Myeongjo',sans-serif;
+    letter-spacing: -.025em;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .txt_pic {
+    display: none;
+}
+
+.wrap_pic .info_g .info_by {
+    width: 200px;
+}
+
+.info_g .info_by {
+    padding-top: 30px;
+    font-size: 12px;
+    font-family: "Noto Sans Light",sans-serif;
+    color: #fff;
+    opacity: .8;
+    filter: alpha(opacity=50);
+}
+
+.info_by {
+    display: block;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.editor_pic .ico_by {
+    background-position: -38px -130px;
+}
+
+.wrap_pic .ico_by {
+    color: #fff;
+}
+
+.info_by .ico_by {
+    width: 14px;
+    height: 13px;
+    margin-top: 3px;
+}
+
+.ico_by {
+    font-family: Georgia,sans-serif;
+    font-style: italic;
+    color: #bfbfbf;
+}
+
+.ico_brunch {
+    overflow: hidden;
+    background: url(//t1.daumcdn.net/brunch9/static/images/pc/ico_brunch_v8_181004_v2.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+.align_g {
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .align_g {
+    height: 260px;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .item_pic_type3 {
+    width: 50%;
+    height: 260px;
+}
+
+.wrap_pic .item_pic {
+    position: relative;
+    float: left;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.PC_DISCOVER_BRUNCHBOOK .append_info {
+    display: table;
+    height: 100%;
+}
+
+.info_g {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrap_pic .append_info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.PC_DISCOVER_B2 .item_pic {
+    width: 300px;
+    height: 520px;
+}
+
+.PC_DISCOVER_B2 .append_info {
+    display: table;
+    height: 100%;
+}
+
+.info_g {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrap_pic .cate_pic {
+    display: inline;
+    border-bottom: 1px solid #fff;
+    font-size: 13px;
+    font-family: 'Noto Sans Light',sans-serif;
+}
+
+.wrap_pic .info_g .info_by {
+    width: 200px;
+}
+
+.info_g .info_by {
+    padding-top: 30px;
+    font-size: 12px;
+    font-family: "Noto Sans Light",sans-serif;
+    color: #fff;
+    opacity: .8;
+    filter: alpha(opacity=50);
+}
+
+.info_by {
+    display: block;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrap_pic .ico_by {
+    color: #fff;
+}
+.info_by .ico_by {
+    width: 14px;
+    height: 13px;
+    margin-top: 3px;
+}
+.ico_by {
+    font-family: Georgia,sans-serif;
+    font-style: italic;
+    color: #bfbfbf;
+}
+
+.align_g {
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.wrap_pic .item_pic .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.wrap_paging {
+    width: 960px;
+    margin: 22px auto 0;
+    text-align: center;
+}
+
+.wrap_paging .link_page {
+    display: inline-block;
+    height: 31px;
+    padding: 0 11px;
+    vertical-align: top;
+}
+
+.wrap_paging {
+    width: 960px;
+    margin: 22px auto 0;
+    text-align: center;
+}
+
+.wrap_paging span .txt_page1 {
+    background-position: 0 -10px;
+}
+
+.wrap_paging span .img_page {
+    height: 12px;
+    margin-top: 8px;
+}
+.wrap_paging .txt_page1 {
+    background-position: 0 0;
+}
+.wrap_paging .img_page {
+    display: block;
+    overflow: hidden;
+    width: 13px;
+    height: 9px;
+    margin-top: 10px;
+}
+.img_page {
+    overflow: hidden;
+    background: url(//t1.daumcdn.net/brunch/static/img/help/pc/top/img_paging.v2.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+.wrap_paging .link_page {
+    display: inline-block;
+    height: 31px;
+    padding: 0 11px;
+    vertical-align: top;
+}
+
+.wrap_paging .txt_page2 {
+    background-position: -20px 0;
+}
+.wrap_paging .img_page {
+    display: block;
+    overflow: hidden;
+    width: 13px;
+    height: 9px;
+    margin-top: 10px;
+}
+.img_page {
+    overflow: hidden;
+    background: url(//t1.daumcdn.net/brunch/static/img/help/pc/top/img_paging.v2.png) no-repeat 0 0;
+    text-indent: -9999px;
+}

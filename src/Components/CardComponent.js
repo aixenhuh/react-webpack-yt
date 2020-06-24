@@ -4,43 +4,90 @@ const CardComponent = (props) => {
 
     if(typeof playlist == "undefined") return (<div>123</div>);
     var playlistcard = playlist.playlist;
-    console.log(playlistcard);
-    var cardlist = playlistcard.map((item) => {
-        return(
-            <li>
-                <a href={`https://www.youtube.com/watch?v=${item.videoId}`} class="link_post">
-                    <div class="post_title has_image">
-                        <strong class="tit_subject">{item.title}</strong>
-                        <div class="wrap_sub_content">
-                            {/* <em class="tit_sub">{item.description}</em> <span class="ico_bar"></span> */}
-                            <span class="article_content">{item.description}</span>
-                        </div>
-                        <span class="mobile_d_n post_append">
-                            <span class="name_txt">공유</span>
-                            <span class="num_txt">0</span>
-                            <span class="ico_dot"></span>
-                            <span class="name_txt">댓글</span>
-                            <span class="num_txt">0</span>
-                            <span class="ico_dot"></span>
-                            <span class="publish_time">5분전</span>
-                            <span class="ico_dot"></span>
-                            <span class="ico_by">by</span>
-                            <span class="name_txt">Alicia</span>
+    console.log(playlistcard)
+    var PC_DISCOVER_BRUNCHBOOK = [];
+    const PC_DISCOVER_B2 = [];
+    var title = '';
+    playlistcard.forEach(function (item, i) {
+        if(i > 2) return;
+        if(i == 0) {
+            title = `${item.title}`;
+            PC_DISCOVER_BRUNCHBOOK.push(
+                <div className="item_pic item_pic_type1 #home_discover_brunchbook">
+                    <a href={`https://www.youtube.com/watch?v=${item.videoId}`} className="link_item #new" target="_blank">
+                        <span className="fade_cover1"></span>
+                        <span className="book_cover"
+                            style={{backgroundImage: `url(${item.thumbnails.high.url})`}}>
+                            <span className="dimmed_book_type1"></span>
+                            <span className="txt_publisher">{item.title}</span>
+                            <span className="dimmed_cover"></span>
                         </span>
-                    </div>
-                    <div class="post_thumb">
-                        <img src={item.thumbnails.high.url} width="120" height="120" class="img_thumb" alt="" />
-                    </div>
-                </a>
-            </li>
-        )
-    })
+                        <span className="info_release">
+                            <span className="inner-info">
+                                <span className="txt_g">First Edition</span>
+                                <span className="txt_g">Released date.Jun.18.2020</span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            )
+        } else {
+            PC_DISCOVER_BRUNCHBOOK.push(
+                <div class={`item_pic item_pic_type${i+1}`}>
+                    <a href={`https://www.youtube.com/watch?v=${item.videoId}`} class="link_item #home_discover" target="_blank">
+                        <img src={item.thumbnails.high.url}
+                            class="img_pic" alt="" />
+                        <div class="append_info">
+                            <div class="info_g">
+                                <div class="inner_g">
+                                    <em class="cate_pic"></em>
+                                    <strong class="tit_pic">{item.title}<br/></strong>
+                                    <span class="txt_pic"></span>
+                                    <span class="info_by"><span
+                                            class="ico_brunch ico_by">by {title}</span> </span>
+                                </div>
+                            </div>
+                            <div class="align_g"></div>
+                        </div>
+                        <div class="mask"></div>
+                    </a>
+                </div>
+            )
+        }
+    });
 
-    return (
-        <ul class="list_article list_common">
-            {cardlist}
-        </ul>
-    ) ;
+    playlistcard.forEach(function (item, i) {
+        if(i > 2 && i < 6) {
+            PC_DISCOVER_B2.push(
+                    <div class="item_pic item_pic_type1 ">
+                        <a href={`https://www.youtube.com/watch?v=${item.videoId}`} class="link_item #home_discover" target="_blank">
+                        <img src={item.thumbnails.high.url}
+                                class="img_pic" alt=""/>
+                            <div class="append_info">
+                                <div class="info_g">
+                                    <div class="inner_g">
+                                        <em class="cate_pic"></em>
+                                        <strong class="tit_pic">{item.title}<br/></strong>
+                                        <span class="txt_pic">{item.title}</span>
+                                        <span class="info_by"><span class="ico_by">by</span> {title}
+                                            yet</span>
+                                    </div>
+                                </div>
+                                <div class="align_g"></div>
+                            </div>
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+            )
+        }
+    });
+
+    return(
+            <div className="wrap_slide">
+                <div class="wrap_pic PC_DISCOVER_BRUNCHBOOK">{PC_DISCOVER_BRUNCHBOOK}</div>
+                <div class="wrap_pic PC_DISCOVER_B2">{PC_DISCOVER_B2}</div>
+            </div>
+        )
 }
 
 export default CardComponent;
